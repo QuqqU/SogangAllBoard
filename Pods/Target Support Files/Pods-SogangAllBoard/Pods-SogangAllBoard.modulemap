@@ -1,0 +1,6 @@
+framework module Pods_SogangAllBoard {
+  umbrella header "Pods-SogangAllBoard-umbrella.h"
+
+  export *
+  module * { export * }
+}

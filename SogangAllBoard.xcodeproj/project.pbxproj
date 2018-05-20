@@ -12,9 +12,14 @@
 		67DB7F6E20B156430095AA1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DB7F6C20B156430095AA1E /* Main.storyboard */; };
 		67DB7F7020B156440095AA1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DB7F6F20B156440095AA1E /* Assets.xcassets */; };
 		67DB7F7320B156440095AA1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DB7F7120B156440095AA1E /* LaunchScreen.storyboard */; };
+		67DB7F7C20B156D70095AA1E /* NetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB7F7B20B156D70095AA1E /* NetManager.swift */; };
+		67DB7F7E20B158A40095AA1E /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB7F7D20B158A40095AA1E /* Definition.swift */; };
+		67DB7F8320B15FBA0095AA1E /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB7F8220B15FBA0095AA1E /* HTMLParser.swift */; };
+		6CFDB400CF498A9D60CE999F /* Pods_SogangAllBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C1BBF2941B170D5D1A154D /* Pods_SogangAllBoard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44C1BBF2941B170D5D1A154D /* Pods_SogangAllBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SogangAllBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DB7F6520B156430095AA1E /* SogangAllBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SogangAllBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DB7F6820B156430095AA1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67DB7F6A20B156430095AA1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,11 @@
 		67DB7F6F20B156440095AA1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67DB7F7220B156440095AA1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67DB7F7420B156440095AA1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67DB7F7B20B156D70095AA1E /* NetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetManager.swift; sourceTree = "<group>"; };
+		67DB7F7D20B158A40095AA1E /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
+		67DB7F8220B15FBA0095AA1E /* HTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
+		6A70421926BD931EA063F287 /* Pods-SogangAllBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SogangAllBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SogangAllBoard/Pods-SogangAllBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		FF8118D7E452947BB4C6D6D0 /* Pods-SogangAllBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SogangAllBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-SogangAllBoard/Pods-SogangAllBoard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFDB400CF498A9D60CE999F /* Pods_SogangAllBoard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4584928C531EDF8D14CC9418 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44C1BBF2941B170D5D1A154D /* Pods_SogangAllBoard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		67DB7F5C20B156430095AA1E = {
 			isa = PBXGroup;
 			children = (
 				67DB7F6720B156430095AA1E /* SogangAllBoard */,
 				67DB7F6620B156430095AA1E /* Products */,
+				DEBEE36781704E7E3AA55F40 /* Pods */,
+				4584928C531EDF8D14CC9418 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +75,58 @@
 		67DB7F6720B156430095AA1E /* SogangAllBoard */ = {
 			isa = PBXGroup;
 			children = (
-				67DB7F6820B156430095AA1E /* AppDelegate.swift */,
-				67DB7F6A20B156430095AA1E /* ViewController.swift */,
-				67DB7F6C20B156430095AA1E /* Main.storyboard */,
+				67DB7F8120B15F800095AA1E /* Definition&Extension */,
+				67DB7F8020B15F5F0095AA1E /* ViewControllers */,
+				67DB7F7F20B15F1A0095AA1E /* main */,
+				67DB7F7A20B156C20095AA1E /* Manager */,
 				67DB7F6F20B156440095AA1E /* Assets.xcassets */,
-				67DB7F7120B156440095AA1E /* LaunchScreen.storyboard */,
 				67DB7F7420B156440095AA1E /* Info.plist */,
 			);
 			path = SogangAllBoard;
+			sourceTree = "<group>";
+		};
+		67DB7F7A20B156C20095AA1E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				67DB7F7B20B156D70095AA1E /* NetManager.swift */,
+				67DB7F8220B15FBA0095AA1E /* HTMLParser.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		67DB7F7F20B15F1A0095AA1E /* main */ = {
+			isa = PBXGroup;
+			children = (
+				67DB7F6820B156430095AA1E /* AppDelegate.swift */,
+				67DB7F7120B156440095AA1E /* LaunchScreen.storyboard */,
+				67DB7F6C20B156430095AA1E /* Main.storyboard */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		67DB7F8020B15F5F0095AA1E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				67DB7F6A20B156430095AA1E /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		67DB7F8120B15F800095AA1E /* Definition&Extension */ = {
+			isa = PBXGroup;
+			children = (
+				67DB7F7D20B158A40095AA1E /* Definition.swift */,
+			);
+			path = "Definition&Extension";
+			sourceTree = "<group>";
+		};
+		DEBEE36781704E7E3AA55F40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A70421926BD931EA063F287 /* Pods-SogangAllBoard.debug.xcconfig */,
+				FF8118D7E452947BB4C6D6D0 /* Pods-SogangAllBoard.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67DB7F7720B156440095AA1E /* Build configuration list for PBXNativeTarget "SogangAllBoard" */;
 			buildPhases = (
+				053C5A6B6C7E1492FB48B02D /* [CP] Check Pods Manifest.lock */,
 				67DB7F6120B156430095AA1E /* Sources */,
 				67DB7F6220B156430095AA1E /* Frameworks */,
 				67DB7F6320B156430095AA1E /* Resources */,
+				F04318F9378DFD06663C9537 /* [CP] Embed Pods Frameworks */,
+				796BAFE698D590786BA63FF9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,12 +198,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		053C5A6B6C7E1492FB48B02D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SogangAllBoard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		796BAFE698D590786BA63FF9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SogangAllBoard/Pods-SogangAllBoard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F04318F9378DFD06663C9537 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SogangAllBoard/Pods-SogangAllBoard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SogangAllBoard/Pods-SogangAllBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		67DB7F6120B156430095AA1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67DB7F7E20B158A40095AA1E /* Definition.swift in Sources */,
+				67DB7F8320B15FBA0095AA1E /* HTMLParser.swift in Sources */,
 				67DB7F6B20B156430095AA1E /* ViewController.swift in Sources */,
+				67DB7F7C20B156D70095AA1E /* NetManager.swift in Sources */,
 				67DB7F6920B156430095AA1E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +407,7 @@
 		};
 		67DB7F7820B156440095AA1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A70421926BD931EA063F287 /* Pods-SogangAllBoard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +426,7 @@
 		};
 		67DB7F7920B156440095AA1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF8118D7E452947BB4C6D6D0 /* Pods-SogangAllBoard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

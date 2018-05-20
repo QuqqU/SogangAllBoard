@@ -17,25 +17,19 @@ class NetManager {
     var currentPage = 1
     
     
-    func get(board target: Board) -> String {
+    func get(board target: Board) {
         let URL = ROOT_URL + target.rawValue
-        var html: String = ""
         Alamofire
             .request(URL)
             .responseString { response in
                 switch response.result {
                 case .success(let value):
-                    html = value
+                    HTMLParser.shared.parse(html: value)
                 case .failure(let error):
                     print("Network Get Error-- where:/\(target) error:\(error)")
                 }
-        }
-        return html
+            }
     }
-    
-  
-    
-    
 }
 
 

@@ -1,5 +1,5 @@
 //
-//  HTMLParsingManager.swift
+//  HTMLParser.swift
 //  SogangAllBoard
 //
 //  Created by 정기웅 on 2018. 5. 20..
@@ -9,30 +9,17 @@
 import Foundation
 import SwiftSoup
 
-class HTMLParsingManager {
-    static let shared = HTMLParsingManager()
+class HTMLParser {
+    static let shared = HTMLParser()
     
-    func f(html: String){
+    func parse(html: String){
         do {
-            let doc: Document = try SwiftSoup.parse(html)
-            
-            
-            //"<p>An <a href='http://example.com/'><b>example</b></a> link.</p>";
-            let links: Elements = try! doc.select("a")
-            for link in links {
-                let linkText: String = try link.text()
-                print(linkText)
+            try SwiftSoup
+                .parse(html).select("tr").forEach {
+                    try $0.select("td").forEach {
+                        print(try! $0.text())
+                    }
             }
-            
-            /*
-            
-            let text: String = try! doc.body()!.text(); // "An example link"
-            let linkHref: String = try! link.attr("href"); // "http://example.com/"
-            let linkText: String = try! link.text(); // "example""
-            
-            let linkOuterH: String = try! link.outerHtml(); // "<a href="http://example.com"><b>example</b></a>"
-            let linkInnerH: String = try! link.html(); // "<b>example</b>"
-            */
         } catch Exception.Error( _, let message) {
             print(message)
         } catch {
