@@ -49,7 +49,7 @@ class HTMLParser {
         } catch(let err) {
             print(err.localizedDescription)
         }
-        //dump(Boards.shared.GeneralBoard)
+        dump(Boards.shared.GeneralBoard)
     }
     
     
@@ -81,7 +81,7 @@ class HTMLParser {
         } catch(let err) {
             print(err.localizedDescription)
         }
-        //dump(Boards.shared.BachelorBoard)
+        dump(Boards.shared.BachelorBoard)
     }
     
     

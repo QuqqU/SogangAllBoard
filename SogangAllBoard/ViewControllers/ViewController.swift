@@ -22,8 +22,8 @@ class ViewController: UIViewController {
         
         
         
-        dump(Boards.shared.GeneralBoard)
-        dump(Boards.shared.BachelorBoard)
+      //  dump(Boards.shared.GeneralBoard)
+      //  dump(Boards.shared.BachelorBoard)
     }
 
     override func didReceiveMemoryWarning() {
