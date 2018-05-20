@@ -10,5 +10,14 @@ import Foundation
 
 
 enum Board: String {
-    case main = "front/boardlist.do?currentPage=1&menuGubun=1&siteGubun=1&bbsConfigFK=2&searchField=ALL&searchValue=&searchLowItem=ALL"
+    case Bachelor = "front/boardlist.do?currentPage=1&menuGubun=1&siteGubun=1&bbsConfigFK=2&searchField=ALL&searchValue=&searchLowItem=ALL"
+}
+
+struct LineInfo {
+    var docNo: String = ""
+    var subject: String = ""
+    var uploader: String = ""
+    var uploadDate: String = ""
+    var views: String = ""
+    var href: String = ""
 }

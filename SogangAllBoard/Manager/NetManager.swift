@@ -24,7 +24,7 @@ class NetManager {
             .responseString { response in
                 switch response.result {
                 case .success(let value):
-                    HTMLParser.shared.parse(html: value)
+                    HTMLParser.shared.parseBachelor(html: value)
                 case .failure(let error):
                     print("Network Get Error-- where:/\(target) error:\(error)")
                 }
