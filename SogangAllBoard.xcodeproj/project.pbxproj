@@ -15,6 +15,7 @@
 		67DB7F7C20B156D70095AA1E /* NetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB7F7B20B156D70095AA1E /* NetManager.swift */; };
 		67DB7F7E20B158A40095AA1E /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB7F7D20B158A40095AA1E /* Definition.swift */; };
 		67DB7F8320B15FBA0095AA1E /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB7F8220B15FBA0095AA1E /* HTMLParser.swift */; };
+		67DE5A5120B1B862008BE953 /* Boards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE5A5020B1B862008BE953 /* Boards.swift */; };
 		6CFDB400CF498A9D60CE999F /* Pods_SogangAllBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C1BBF2941B170D5D1A154D /* Pods_SogangAllBoard.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		67DB7F7B20B156D70095AA1E /* NetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetManager.swift; sourceTree = "<group>"; };
 		67DB7F7D20B158A40095AA1E /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
 		67DB7F8220B15FBA0095AA1E /* HTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
+		67DE5A5020B1B862008BE953 /* Boards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boards.swift; sourceTree = "<group>"; };
 		6A70421926BD931EA063F287 /* Pods-SogangAllBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SogangAllBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SogangAllBoard/Pods-SogangAllBoard.debug.xcconfig"; sourceTree = "<group>"; };
 		FF8118D7E452947BB4C6D6D0 /* Pods-SogangAllBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SogangAllBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-SogangAllBoard/Pods-SogangAllBoard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 			children = (
 				67DB7F7B20B156D70095AA1E /* NetManager.swift */,
 				67DB7F8220B15FBA0095AA1E /* HTMLParser.swift */,
+				67DE5A5020B1B862008BE953 /* Boards.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				67DB7F7E20B158A40095AA1E /* Definition.swift in Sources */,
 				67DB7F8320B15FBA0095AA1E /* HTMLParser.swift in Sources */,
+				67DE5A5120B1B862008BE953 /* Boards.swift in Sources */,
 				67DB7F6B20B156430095AA1E /* ViewController.swift in Sources */,
 				67DB7F7C20B156D70095AA1E /* NetManager.swift in Sources */,
 				67DB7F6920B156430095AA1E /* AppDelegate.swift in Sources */,

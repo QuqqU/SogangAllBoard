@@ -9,7 +9,8 @@
 import Foundation
 
 
-enum Board: String {
+enum BoardType: String {
+    case General = "front/boardlist.do?bbsConfigFK=1"
     case Bachelor = "front/boardlist.do?currentPage=1&menuGubun=1&siteGubun=1&bbsConfigFK=2&searchField=ALL&searchValue=&searchLowItem=ALL"
 }
 

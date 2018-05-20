@@ -13,7 +13,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
+        
+        NetManager.shared.get(board: .General)
         NetManager.shared.get(board: .Bachelor)
+        
+        
+        
+        dump(Boards.shared.GeneralBoard)
+        dump(Boards.shared.BachelorBoard)
     }
 
     override func didReceiveMemoryWarning() {
