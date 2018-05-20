@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		67DB7F6920B156430095AA1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB7F6820B156430095AA1E /* AppDelegate.swift */; };
-		67DB7F6B20B156430095AA1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB7F6A20B156430095AA1E /* ViewController.swift */; };
 		67DB7F6E20B156430095AA1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DB7F6C20B156430095AA1E /* Main.storyboard */; };
 		67DB7F7020B156440095AA1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DB7F6F20B156440095AA1E /* Assets.xcassets */; };
 		67DB7F7320B156440095AA1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DB7F7120B156440095AA1E /* LaunchScreen.storyboard */; };
@@ -16,6 +15,9 @@
 		67DB7F7E20B158A40095AA1E /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB7F7D20B158A40095AA1E /* Definition.swift */; };
 		67DB7F8320B15FBA0095AA1E /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB7F8220B15FBA0095AA1E /* HTMLParser.swift */; };
 		67DE5A5120B1B862008BE953 /* Boards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE5A5020B1B862008BE953 /* Boards.swift */; };
+		67DE5A5320B1D470008BE953 /* BoardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE5A5220B1D470008BE953 /* BoardTableViewController.swift */; };
+		67DE5A5520B1D4A2008BE953 /* BoardTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE5A5420B1D4A2008BE953 /* BoardTableCell.swift */; };
+		67DE5A5920B1DE90008BE953 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE5A5820B1DE90008BE953 /* MainViewController.swift */; };
 		6CFDB400CF498A9D60CE999F /* Pods_SogangAllBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C1BBF2941B170D5D1A154D /* Pods_SogangAllBoard.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +25,6 @@
 		44C1BBF2941B170D5D1A154D /* Pods_SogangAllBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SogangAllBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DB7F6520B156430095AA1E /* SogangAllBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SogangAllBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DB7F6820B156430095AA1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		67DB7F6A20B156430095AA1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67DB7F6D20B156430095AA1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67DB7F6F20B156440095AA1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67DB7F7220B156440095AA1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +33,9 @@
 		67DB7F7D20B158A40095AA1E /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
 		67DB7F8220B15FBA0095AA1E /* HTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
 		67DE5A5020B1B862008BE953 /* Boards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boards.swift; sourceTree = "<group>"; };
+		67DE5A5220B1D470008BE953 /* BoardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTableViewController.swift; sourceTree = "<group>"; };
+		67DE5A5420B1D4A2008BE953 /* BoardTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTableCell.swift; sourceTree = "<group>"; };
+		67DE5A5820B1DE90008BE953 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6A70421926BD931EA063F287 /* Pods-SogangAllBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SogangAllBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SogangAllBoard/Pods-SogangAllBoard.debug.xcconfig"; sourceTree = "<group>"; };
 		FF8118D7E452947BB4C6D6D0 /* Pods-SogangAllBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SogangAllBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-SogangAllBoard/Pods-SogangAllBoard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,7 +114,9 @@
 		67DB7F8020B15F5F0095AA1E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				67DB7F6A20B156430095AA1E /* ViewController.swift */,
+				67DE5A5220B1D470008BE953 /* BoardTableViewController.swift */,
+				67DE5A5420B1D4A2008BE953 /* BoardTableCell.swift */,
+				67DE5A5820B1DE90008BE953 /* MainViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -267,9 +273,11 @@
 				67DB7F7E20B158A40095AA1E /* Definition.swift in Sources */,
 				67DB7F8320B15FBA0095AA1E /* HTMLParser.swift in Sources */,
 				67DE5A5120B1B862008BE953 /* Boards.swift in Sources */,
-				67DB7F6B20B156430095AA1E /* ViewController.swift in Sources */,
 				67DB7F7C20B156D70095AA1E /* NetManager.swift in Sources */,
 				67DB7F6920B156430095AA1E /* AppDelegate.swift in Sources */,
+				67DE5A5320B1D470008BE953 /* BoardTableViewController.swift in Sources */,
+				67DE5A5520B1D4A2008BE953 /* BoardTableCell.swift in Sources */,
+				67DE5A5920B1DE90008BE953 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
