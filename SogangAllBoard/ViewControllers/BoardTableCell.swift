@@ -14,6 +14,7 @@ class BoardTableCell: UITableViewCell {
     @IBOutlet weak var subject: UILabel!
     @IBOutlet weak var number: UILabel!
     @IBOutlet weak var uploadDate: UILabel!
+    @IBOutlet weak var period: UILabel!
     @IBOutlet weak var views: UILabel!
     
 }

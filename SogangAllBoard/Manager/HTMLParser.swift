@@ -16,7 +16,27 @@ class HTMLParser {
 
     func parse(html: String, board type: BoardType) {
         switch type {
-        case .General, .Bachelor: parseSogangMain(html: html, board: type)
+        case .General, .Bachelor, .Scholarship: parseSogangMain(html: html, board: type)
+        case .Calendar: parseCalendar(html: html)
+        }
+    }
+    
+    func parseCalendar(html: String) {
+        do {
+            var calInfo = [LineInfo]()
+            try SwiftSoup
+                .parse(html).getElementsByClass("select_list").select("li").forEach {
+                    var newCalInfo = LineInfo()
+                    newCalInfo.subject = try $0.select("a").text()
+                    newCalInfo.period = try $0.getElementsByClass("date").text()
+                    newCalInfo.href = try $0.select("a").attr("href")
+                    
+                    calInfo.append(newCalInfo)
+                }
+            Boards.shared.CalendarBoard = calInfo
+        }
+        catch(let err) {
+            print(err.localizedDescription)
         }
     }
     
@@ -44,15 +64,19 @@ class HTMLParser {
                         }
                     }
                     board.append(newLine)
-            }
+                }
             
             switch type {
             case .General:
                 Boards.shared.GeneralBoard = board
             case .Bachelor:
                 Boards.shared.BachelorBoard = board
+            case .Scholarship:
+                Boards.shared.ScholarshipBoard = board
+            default: ()
             }
-        } catch(let err) {
+        }
+        catch(let err) {
             print(err.localizedDescription)
         }
     }

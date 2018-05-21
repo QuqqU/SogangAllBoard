@@ -30,17 +30,26 @@ class BoardTableViewController: UITableViewController {
         switch self.board {
         case .General: return Boards.shared.GeneralBoard.count
         case .Bachelor: return Boards.shared.BachelorBoard.count
+        case .Scholarship: return Boards.shared.ScholarshipBoard.count
+        case .Calendar: return Boards.shared.CalendarBoard.count
         }
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! BoardTableCell
-        
+        var cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! BoardTableCell
         let info: LineInfo
         switch self.board {
         case .General: info = Boards.shared.GeneralBoard[indexPath.row]
         case .Bachelor: info = Boards.shared.BachelorBoard[indexPath.row]
+        case .Scholarship: info = Boards.shared.ScholarshipBoard[indexPath.row]
+        case .Calendar:
+            info = Boards.shared.CalendarBoard[indexPath.row]
+            cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier2", for: indexPath) as! BoardTableCell
+            cell.subject.text = info.subject
+            cell.period.text = info.period
+            
+            return cell
         }
         
         cell.subject.text = info.subject
@@ -52,16 +61,5 @@ class BoardTableViewController: UITableViewController {
     
 
    
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

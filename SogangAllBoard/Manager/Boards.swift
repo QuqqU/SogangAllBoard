@@ -15,7 +15,8 @@ class Boards {
     
     var GeneralBoard = [LineInfo]()
     var BachelorBoard = [LineInfo]()
-    
+    var ScholarshipBoard = [LineInfo]()
+    var CalendarBoard = [LineInfo]()
     
     
 }
