@@ -14,10 +14,22 @@ class NetManager {
     static let shared = NetManager()
     
     let ROOT_URL: String = "http://www.sogang.ac.kr/"
-    var currentPage = 1
     
+
+    func get(URL: String, _ complete: ( (String) -> Void)? = nil) {
+        Alamofire
+            .request(ROOT_URL + URL)
+            .responseString { response in
+                switch response.result {
+                case .success(let value):
+                    complete?(value)
+                case .failure(let error):
+                    print("Network Get Error-- where:/\(URL) error:\(error)")
+                }
+        }
+    }
     
-    func get(board target: BoardType) {
+    func get(board target: BoardType, _ complete: ( () -> Void )? = nil) {
         let URL = ROOT_URL + target.rawValue
         Alamofire
             .request(URL)
@@ -28,8 +40,11 @@ class NetManager {
                 case .failure(let error):
                     print("Network Get Error-- where:/\(target) error:\(error)")
                 }
+                
+                complete?()
             }
     }
+    
 }
 
 

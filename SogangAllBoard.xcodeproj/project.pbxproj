@@ -18,6 +18,9 @@
 		67DE5A5320B1D470008BE953 /* BoardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE5A5220B1D470008BE953 /* BoardTableViewController.swift */; };
 		67DE5A5520B1D4A2008BE953 /* BoardTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE5A5420B1D4A2008BE953 /* BoardTableCell.swift */; };
 		67DE5A5920B1DE90008BE953 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE5A5820B1DE90008BE953 /* MainViewController.swift */; };
+		67DF323320B45A2700BF4D02 /* 스크린샷 2018-05-22 오후 10.54.13.png in Resources */ = {isa = PBXBuildFile; fileRef = 67DF323120B45A2600BF4D02 /* 스크린샷 2018-05-22 오후 10.54.13.png */; };
+		67DF323420B45A2700BF4D02 /* 스크린샷 2018-05-22 오후 10.30.34.png in Resources */ = {isa = PBXBuildFile; fileRef = 67DF323220B45A2700BF4D02 /* 스크린샷 2018-05-22 오후 10.30.34.png */; };
+		67DF323720B45A7300BF4D02 /* 스크린샷 2018-05-22 오후 11.02.12.png in Resources */ = {isa = PBXBuildFile; fileRef = 67DF323620B45A7200BF4D02 /* 스크린샷 2018-05-22 오후 11.02.12.png */; };
 		6CFDB400CF498A9D60CE999F /* Pods_SogangAllBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C1BBF2941B170D5D1A154D /* Pods_SogangAllBoard.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,9 @@
 		67DE5A5220B1D470008BE953 /* BoardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTableViewController.swift; sourceTree = "<group>"; };
 		67DE5A5420B1D4A2008BE953 /* BoardTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTableCell.swift; sourceTree = "<group>"; };
 		67DE5A5820B1DE90008BE953 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		67DF323120B45A2600BF4D02 /* 스크린샷 2018-05-22 오후 10.54.13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "스크린샷 2018-05-22 오후 10.54.13.png"; sourceTree = "<group>"; };
+		67DF323220B45A2700BF4D02 /* 스크린샷 2018-05-22 오후 10.30.34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "스크린샷 2018-05-22 오후 10.30.34.png"; sourceTree = "<group>"; };
+		67DF323620B45A7200BF4D02 /* 스크린샷 2018-05-22 오후 11.02.12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "스크린샷 2018-05-22 오후 11.02.12.png"; sourceTree = "<group>"; };
 		6A70421926BD931EA063F287 /* Pods-SogangAllBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SogangAllBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SogangAllBoard/Pods-SogangAllBoard.debug.xcconfig"; sourceTree = "<group>"; };
 		FF8118D7E452947BB4C6D6D0 /* Pods-SogangAllBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SogangAllBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-SogangAllBoard/Pods-SogangAllBoard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +87,7 @@
 		67DB7F6720B156430095AA1E /* SogangAllBoard */ = {
 			isa = PBXGroup;
 			children = (
+				67DF323520B45A2D00BF4D02 /* images */,
 				67DB7F8120B15F800095AA1E /* Definition&Extension */,
 				67DB7F8020B15F5F0095AA1E /* ViewControllers */,
 				67DB7F7F20B15F1A0095AA1E /* main */,
@@ -127,6 +134,16 @@
 				67DB7F7D20B158A40095AA1E /* Definition.swift */,
 			);
 			path = "Definition&Extension";
+			sourceTree = "<group>";
+		};
+		67DF323520B45A2D00BF4D02 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				67DF323220B45A2700BF4D02 /* 스크린샷 2018-05-22 오후 10.30.34.png */,
+				67DF323120B45A2600BF4D02 /* 스크린샷 2018-05-22 오후 10.54.13.png */,
+				67DF323620B45A7200BF4D02 /* 스크린샷 2018-05-22 오후 11.02.12.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		DEBEE36781704E7E3AA55F40 /* Pods */ = {
@@ -199,9 +216,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67DF323720B45A7300BF4D02 /* 스크린샷 2018-05-22 오후 11.02.12.png in Resources */,
+				67DF323420B45A2700BF4D02 /* 스크린샷 2018-05-22 오후 10.30.34.png in Resources */,
 				67DB7F7320B156440095AA1E /* LaunchScreen.storyboard in Resources */,
 				67DB7F7020B156440095AA1E /* Assets.xcassets in Resources */,
 				67DB7F6E20B156430095AA1E /* Main.storyboard in Resources */,
+				67DF323320B45A2700BF4D02 /* 스크린샷 2018-05-22 오후 10.54.13.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

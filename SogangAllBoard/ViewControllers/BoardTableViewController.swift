@@ -60,6 +60,28 @@ class BoardTableViewController: UITableViewController {
     }
     
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let href: String
+        switch self.board {
+        case .General: href = Boards.shared.GeneralBoard[indexPath.row].href
+        case .Bachelor: href = Boards.shared.BachelorBoard[indexPath.row].href
+        case .Scholarship: href = Boards.shared.ScholarshipBoard[indexPath.row].href
+        case  .Calendar: href = Boards.shared.CalendarBoard[indexPath.row].href
+        }
+        
+        NetManager.shared.get(URL: href) { context in
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "href_view")
+            
+            let wv = UIWebView(frame: CGRect(x: 0,
+                                             y: 0,
+                                             width: UIScreen.main.bounds.width,
+                                             height: UIScreen.main.bounds.height))
+            wv.loadHTMLString(context, baseURL: nil)
+        
+            vc?.view.addSubview(wv)
+            self.navigationController?.pushViewController(vc!, animated: true)
+        }
+    }
    
 
 }
