@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67B926BC20B7FE4B007DA238 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 67B926BB20B7FE4B007DA238 /* LICENSE */; };
 		67DB7F6920B156430095AA1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB7F6820B156430095AA1E /* AppDelegate.swift */; };
 		67DB7F6E20B156430095AA1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DB7F6C20B156430095AA1E /* Main.storyboard */; };
 		67DB7F7020B156440095AA1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DB7F6F20B156440095AA1E /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		44C1BBF2941B170D5D1A154D /* Pods_SogangAllBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SogangAllBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B926BB20B7FE4B007DA238 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		67DB7F6520B156430095AA1E /* SogangAllBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SogangAllBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DB7F6820B156430095AA1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67DB7F6D20B156430095AA1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		67DB7F5C20B156430095AA1E = {
 			isa = PBXGroup;
 			children = (
+				67B926BB20B7FE4B007DA238 /* LICENSE */,
 				67DB7F6720B156430095AA1E /* SogangAllBoard */,
 				67DB7F6620B156430095AA1E /* Products */,
 				DEBEE36781704E7E3AA55F40 /* Pods */,
@@ -219,6 +222,7 @@
 				67DF323720B45A7300BF4D02 /* 스크린샷 2018-05-22 오후 11.02.12.png in Resources */,
 				67DF323420B45A2700BF4D02 /* 스크린샷 2018-05-22 오후 10.30.34.png in Resources */,
 				67DB7F7320B156440095AA1E /* LaunchScreen.storyboard in Resources */,
+				67B926BC20B7FE4B007DA238 /* LICENSE in Resources */,
 				67DB7F7020B156440095AA1E /* Assets.xcassets in Resources */,
 				67DB7F6E20B156430095AA1E /* Main.storyboard in Resources */,
 				67DF323320B45A2700BF4D02 /* 스크린샷 2018-05-22 오후 10.54.13.png in Resources */,

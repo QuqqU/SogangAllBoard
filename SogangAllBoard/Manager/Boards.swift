@@ -12,7 +12,7 @@ import Foundation
 class Boards {
     static let shared = Boards()
     
-    
+    var buffer: String?
     var GeneralBoard = [LineInfo]()
     var BachelorBoard = [LineInfo]()
     var ScholarshipBoard = [LineInfo]()

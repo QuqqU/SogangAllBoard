@@ -8,7 +8,7 @@
 
 import Foundation
 import SwiftSoup
-
+import Alamofire
 
 class HTMLParser {
     static let shared = HTMLParser()
@@ -21,7 +21,7 @@ class HTMLParser {
         }
     }
     
-    func parseCalendar(html: String) {
+    private func parseCalendar(html: String) {
         do {
             var calInfo = [LineInfo]()
             try SwiftSoup
@@ -30,7 +30,6 @@ class HTMLParser {
                     newCalInfo.subject = try $0.select("a").text()
                     newCalInfo.period = try $0.getElementsByClass("date").text()
                     newCalInfo.href = try $0.select("a").attr("href")
-                    
                     calInfo.append(newCalInfo)
                 }
             Boards.shared.CalendarBoard = calInfo
@@ -40,7 +39,7 @@ class HTMLParser {
         }
     }
     
-    func parseSogangMain(html: String, board type: BoardType){
+    private func parseSogangMain(html: String, board type: BoardType){
         do {
             var board = [LineInfo]()
             try SwiftSoup
